@@ -1,0 +1,58 @@
+{
+    "Name": "Cougar",
+    "AISetup": {
+        "RowName": "Tamed_Cougar"
+    },
+    "SupportedCombatStates": [
+        "DoNotEngage",
+        "NeutralEngagement",
+        "AggressiveEngagement"
+    ],
+    "SupportedMovementStates": [
+        "Follow",
+        "IdleWander",
+        "IdleStanding",
+        "IdleLying"
+    ],
+    "Animations": {
+        "(TagName=\"BT.Mount.Animation.IdleStanding\")": "/Game/ASS/CRE/Cat/Anim/Cat_Idle_Montage.Cat_Idle_Montage",
+        "(TagName=\"BT.Mount.Animation.Rest\")": "/Game/ASS/CRE/Cat/Anim/Cat_Rest_Montage.Cat_Rest_Montage",
+        "(TagName=\"BT.Mount.Animation.Eat\")": "/Game/ASS/CRE/Cougar/Animations/Cat_Eating_Montage_2.Cat_Eating_Montage_2",
+        "(TagName=\"BT.Mount.Animation.Jump\")": "/Game/ASS/CRE/Cougar/Animations/Cougar_Jump_Up_Montage.Cougar_Jump_Up_Montage",
+        "(TagName=\"BT.Mount.Animation.Attack\")": "/Game/ASS/CRE/Cougar/Animations/Lion_F_Attack_Montage.Lion_F_Attack_Montage",
+        "(TagName=\"BT.Mount.Animation.Drink\")": "/Game/ASS/CRE/Cougar/Animations/Cat_Drinking_Montage_2.Cat_Drinking_Montage_2"
+    },
+    "DefaultNames": [
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-0\", \"Marie\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-1\", \"Duchess\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-2\", \"Toulouse\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-3\", \"Berlioz\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-4\", \"O\\'Malley\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-5\", \"Bagheera\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-6\", \"Figaro\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-7\", \"Rajah\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-8\", \"Scar\")",
+        "NSLOCTEXT(\"D_Mounts\", \"Cougar-DefaultNames-9\", \"Tom\")"
+    ],
+    "MapIcon": {
+        "RowName": "Mount"
+    },
+    "RelativeFeetOffset": {
+        "Y": 10,
+        "Z": 10
+    },
+    "RelativeHandsOffset": {
+        "X": 2
+    },
+    "MountTalentArchetype": {
+        "RowName": "Creature_Cougar"
+    },
+    "GrowthCurve": {
+        "RowName": "AI_Pets"
+    },
+    "bUseTemperature": true,
+    "ComfortableTemperatureRange": {
+        "X": 12,
+        "Y": 52
+    }
+}

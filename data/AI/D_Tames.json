@@ -1,0 +1,23 @@
+{
+    "Name": "Lion_F",
+    "TameDurationInSeconds": 600,
+    "DesiredTemperatureRange": {
+        "X": 15,
+        "Y": 45
+    },
+    "DesiredShelterPercentage": 0,
+    "DesiredNutritionPercentage": 25,
+    "TamedAI": {
+        "RowName": "Tamed_Cougar"
+    },
+    "MatureCreatureType": {
+        "RowName": "Lion_F"
+    },
+    "PercentChanceToSpawnJuvenile": 0,
+    "MaxNearbyAutoSpawnedJuveniles": 0,
+    "TrappingSupportedAtmospheres": [
+        {
+            "Value": "Desert"
+        }
+    ]
+ }

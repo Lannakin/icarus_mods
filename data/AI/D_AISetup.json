@@ -1,0 +1,136 @@
+{
+    "Name": "Tamed_Cougar",
+    "ActorClass": "/Game/BP/Mounts/BP_Tamed_Cougar.BP_Tamed_Cougar_C",
+    "ControllerClass": "/Game/BP/AI/Basic/Mounts/BP_MountAIController.BP_MountAIController_C",
+    "CreatureType": {
+        "RowName": "Cougar"
+    },
+    "DeadItem": {
+        "RowName": "AnimalCarcass_Lion_F"
+    },
+    "Relationships": {
+        "RowName": "Player"
+    },
+    "AIGrowth": {
+        "RowName": "Tamed_Cougar"
+    },
+    "MovementMapping": {
+        "Stationary": {
+            "MaxWalkSpeed": 0,
+            "GroundFriction": 8,
+            "BrakingFriction": 2,
+            "MaxAcceleration": 300,
+            "BrakingDeceleration": 250,
+            "RotationRate": 100,
+            "MaxSwimSpeed": 1
+        },
+        "Sneak": {
+            "MaxWalkSpeed": 0.25999999046325684,
+            "GroundFriction": 8,
+            "BrakingFriction": 2,
+            "MaxAcceleration": 300,
+            "BrakingDeceleration": 250,
+            "RotationRate": 300,
+            "MaxSwimSpeed": 1
+        },
+        "Walk": {
+            "MaxWalkSpeed": 0.5,
+            "GroundFriction": 8,
+            "BrakingFriction": 2,
+            "MaxAcceleration": 300,
+            "BrakingDeceleration": 250,
+            "RotationRate": 100,
+            "MaxSwimSpeed": 1
+        },
+        "Jog": {
+            "MaxWalkSpeed": 2,
+            "GroundFriction": 8,
+            "BrakingFriction": 2,
+            "MaxAcceleration": 300,
+            "BrakingDeceleration": 250,
+            "RotationRate": 220,
+            "MaxSwimSpeed": 1
+        },
+        "Run": {
+            "MaxWalkSpeed": 4.400000095367432,
+            "GroundFriction": 8,
+            "BrakingFriction": 4,
+            "MaxAcceleration": 600,
+            "BrakingDeceleration": 800,
+            "RotationRate": 300,
+            "MaxSwimSpeed": 1
+        },
+        "Sprint": {
+            "MaxWalkSpeed": 8,
+            "GroundFriction": 8,
+            "BrakingFriction": 2,
+            "MaxAcceleration": 900,
+            "BrakingDeceleration": 500,
+            "RotationRate": 300,
+            "MaxSwimSpeed": 1
+        },
+        "Attacking": {
+            "MaxWalkSpeed": 4.400000095367432,
+            "GroundFriction": 8,
+            "BrakingFriction": 64,
+            "MaxAcceleration": 600,
+            "BrakingDeceleration": 50000,
+            "RotationRate": 300,
+            "MaxSwimSpeed": 1
+        },
+        "Undefined": {
+            "MaxWalkSpeed": 2.930000066757202,
+            "GroundFriction": 8,
+            "BrakingFriction": 2,
+            "MaxAcceleration": 300,
+            "BrakingDeceleration": 250,
+            "RotationRate": 100,
+            "MaxSwimSpeed": 1
+        }
+    },
+    "CriticalHitBones": [
+        {
+            "BoneName": "RigHead",
+            "AffectsChildren": true
+        }
+    ],
+    "Audio": {
+        "RowName": "Cougar"
+    },
+    "CollisionHitEventBones": [
+        "RigNeck1",
+        "RigChest",
+        "RigSpine3",
+        "RigSpine2"
+    ],
+    "ValidBaitTagQuery": {
+        "TagDictionary": [
+            {
+                "TagName": "GOAP.Food.Carnivore.Bait"
+            }
+        ],
+        "QueryTokenStream": [
+            0,
+            1,
+            1,
+            2,
+            0,
+            1
+        ],
+        "AutoDescription": " ANY( GOAP.Food.Carnivore.Bait )"
+    },
+    "Trophy": {
+        "RowName": "Cougar_Head"
+    },
+    "Loot": {
+        "RowName": "Lion_Carcass_Loot"
+    },
+    "Hitable": {
+        "RowName": "AnimalBones_Medium"
+    },
+    "bUseSurvivalCharacterState": true,
+    "bStartWithSurvivalTickDisabled": false,
+    "BestiaryGroup": {
+        "RowName": "Cougar"
+    }
+}

@@ -1,0 +1,679 @@
+[
+{
+    "Name": "Creature_Cougar_Mark",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_Mark-DisplayName\", \"Hunter\\'s Mark\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_Mark-Description\", \"Attacks Mark target on hit, causing extra damage the next time they are hit\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Wolf_MarkOnHit.T_Talent_Wolf_MarkOnHit",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 400,
+        "Y": 100
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseAttacksCauseMarkedTarget_%\")": 25
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseAttacksCauseMarkedTarget_%\")": 60
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseAttacksCauseMarkedTarget_%\")": 100
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Health_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "YThenX"
+},
+{
+    "Name": "Creature_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar-DisplayName\", \"Endless Hunger\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar-Description\", \"Heals a percentage of life when killing targets\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Wolf_HealOnKill.T_Talent_Wolf_HealOnKill",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 900,
+        "Y": 500
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseTotalHealthRestoredOnKill_%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseTotalHealthRestoredOnKill_%\")": 15
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseTotalHealthRestoredOnKill_%\")": 30
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Damage_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "XThenY"
+},
+        {
+    "Name": "CombatPet_Health_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Health_Cougar-DisplayName\", \"Wild Fortitude\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Health_Cougar-Description\", \"Increased Maximum Health\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Health.T_Talent_Base_Health",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 500,
+        "Y": 300
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 10
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMaximumHealth_+%\")": 20
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Base_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_ReducedFoodConsumption_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedFoodConsumption_Cougar-DisplayName\", \"Metabolic Preservation\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedFoodConsumption_Cougar-Description\", \"Reduced Food Usage\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedFoodConsumption.T_Talent_Base_ReducedFoodConsumption",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 500,
+        "Y": 700
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodConsumption_+%\")": -2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodConsumption_+%\")": -5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodConsumption_+%\")": -10
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodConsumption_+%\")": -20
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Base_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_Base_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_Cougar-DisplayName\", \"Hyena\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Base_Cougar-Description\", \"Can be specialized into defensive or supportive combat roles.\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_Hyena.T_Talent_Base_Hyena",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 500,
+        "Y": 500
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {},
+            "GrantedFlags": [
+                {
+                    "RowName": "None",
+                    "DataTableName": "D_CharacterFlags"
+                }
+            ]
+        }
+    ],
+    "bDefaultUnlocked": true,
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_Damage_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Damage_Cougar-DisplayName\", \"Natural Ferocity\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_Damage_Cougar-Description\", \"Increased Melee Damage\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_CombatPetDamage.T_Talent_Base_CombatPetDamage",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 700,
+        "Y": 500
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 15
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 30
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseMeleeDamage_+%\")": 60
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Base_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_HealthRegeneration_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_HealthRegeneration_Cougar-DisplayName\", \"Nurtured Recovery\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_HealthRegeneration_Cougar-Description\", \"Increased Health Regeneration\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_HealthRegeneration.T_Talent_Base_HealthRegeneration",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 300,
+        "Y": 500
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 15
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 30
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseHealthRegen_+%\")": 60
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Base_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_FoodSlot_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodSlot_Cougar-DisplayName\", \"Large Stomach\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodSlot_Cougar-Description\", \"Increases Food Buff Effectiveness and allows an additional Food Buff\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodSlot.T_Talent_Base_FoodSlot",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 900,
+        "Y": 900
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 3
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 7
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 12
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFruitAndVegeModifierEffectiveness_+%\")": 15,
+                "(Value=\"BaseMaximumStomachFullness_+\")": 1
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Damage_Cougar",
+            "DataTableName": "D_Talents"
+        },
+        {
+            "RowName": "CombatPet_ReducedFoodConsumption_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_ReducedWaterUsage_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cougar-DisplayName\", \"Hydration Elasticity \")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_ReducedWaterUsage_Cougar-Description\", \"Reduced Water Consumption and Increased Heat Resistance\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_ReducedWaterUsage.T_Talent_Base_ReducedWaterUsage",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 900,
+        "Y": 100
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": -2,
+                "(Value=\"BaseHeatResistance_%\")": 1
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": -5,
+                "(Value=\"BaseHeatResistance_%\")": 2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": -10,
+                "(Value=\"BaseHeatResistance_%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseWaterConsumption_+%\")": -20,
+                "(Value=\"BaseHeatResistance_%\")": 10
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Health_Cougar",
+            "DataTableName": "D_Talents"
+        },
+        {
+            "RowName": "CombatPet_Damage_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_FoodBuffDuration_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cougar-DisplayName\", \"Perfect Pasturage\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_FoodBuffDuration_Cougar-Description\", \"Increased Food Effects Duration and Cold Resistance\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_FoodBuffDuration.T_Talent_Base_FoodBuffDuration",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 100,
+        "Y": 100
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodModifierDuration_+%\")": 2,
+                "(Value=\"BaseColdResistance_%\")": 1
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodModifierDuration_+%\")": 5,
+                "(Value=\"BaseColdResistance_%\")": 2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodModifierDuration_+%\")": 10,
+                "(Value=\"BaseColdResistance_%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseFoodModifierDuration_+%\")": 20,
+                "(Value=\"BaseColdResistance_%\")": 10,
+                "(Value=\"IsMountGrazingEnabled_?\")": 1
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_HealthRegeneration_Cougar",
+            "DataTableName": "D_Talents"
+        },
+        {
+            "RowName": "CombatPet_Health_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "CombatPet_DamageReduction_Cougar",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"CombatPet_DamageReduction_Cougar-DisplayName\", \"Tough as Leather\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"CombatPet_DamageReduction_Cougar-Description\", \"Increased Physical Damage Reduction\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Base_DamageReduction.T_Talent_Base_DamageReduction",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 100,
+        "Y": 900
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 4
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 8
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 15
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_ReducedFoodConsumption_Cougar",
+            "DataTableName": "D_Talents"
+        },
+        {
+            "RowName": "CombatPet_HealthRegeneration_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "Creature_Cougar_PoisonResistance",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_PoisonResistance-DisplayName\", \"Scavenger\\'s Tolerance \")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_PoisonResistance-Description\", \"Increased Poison Resistance\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Cooking/Talent_Cooking_AreYouGonnaEatThat.Talent_Cooking_AreYouGonnaEatThat",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 100,
+        "Y": 500
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BasePoisonDamageResistance_+%\")": 10
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePoisonDamageResistance_+%\")": 20
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePoisonDamageResistance_+%\")": 40
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_HealthRegeneration_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "Creature_Cougar_AuraHeatResist",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_AuraHeatResist-DisplayName\", \"Fever Control\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_AuraHeatResist-Description\", \"Reduces Desert Water Consumption, at max rank grants Hyperthermia Resist Aura\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_Buffalo_AuraHeatResist.T_Talent_Buffalo_AuraHeatResist",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 500,
+        "Y": 900
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BaseDesertWaterConsumption_+%\")": -2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseDesertWaterConsumption_+%\")": -5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BaseDesertWaterConsumption_+%\")": -7,
+                "(Value=\"GrantedAuraHyperthermiaResistance_?\")": 1
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_ReducedFoodConsumption_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "ShortestDistance"
+},
+{
+    "Name": "Creature_Cougar_DamageReduction",
+    "DisplayName": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_DamageReduction-DisplayName\", \"Thick Hide\")",
+    "Description": "NSLOCTEXT(\"D_Talents\", \"Creature_Cougar_DamageReduction-Description\", \"Increased Physical Damage Reduction\")",
+    "Icon": "/Game/Assets/2DArt/UI/Talents/Companion/T_Talent_WoolyZebra_PhysicalDamageReduction.T_Talent_WoolyZebra_PhysicalDamageReduction",
+    "TalentTree": {
+        "RowName": "Creature_Cougar"
+    },
+    "Position": {
+        "X": 600,
+        "Y": 100
+    },
+    "Size": {
+        "X": 128,
+        "Y": 128
+    },
+    "Rewards": [
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 2
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 5
+            },
+            "GrantedFlags": []
+        },
+        {
+            "GrantedStats": {
+                "(Value=\"BasePhysicalDamageResistance_%\")": 10
+            },
+            "GrantedFlags": []
+        }
+    ],
+    "RequiredTalents": [
+        {
+            "RowName": "CombatPet_Health_Cougar",
+            "DataTableName": "D_Talents"
+        }
+    ],
+    "DrawMethodOverride": "YThenX"
+}
+]
