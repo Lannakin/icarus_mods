@@ -1,4 +1,5 @@
 [
+    {
     "Name": "Tamed_Cougar",
     "Base": {
         "(Value=\"BaseMovementSpeed_+\")": 175,
@@ -33,9 +34,8 @@
         "(Value=\"BaseNPCMeleeAttacksPerMinute_+\")": 100,
         "(Value=\"BaseFallDamageResistance_%\")": 40
     },
-    {
     "Health": "CurveFloat'/Game/Data/AI/C_Jaguar_Health.C_Jaguar_Health'",
     "MeleeDamage": "CurveFloat'/Game/Data/AI/C_Jaguar_MeleeDamage.C_Jaguar_MeleeDamage'",
     "ExperienceMultiplier": "CurveFloat'/Game/Data/AI/C_AggressiveExperience.C_AggressiveExperience'"
-    }
+}
 ]
